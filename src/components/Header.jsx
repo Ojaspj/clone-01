@@ -1,25 +1,39 @@
 import React from 'react'
-import { HStack, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Text } from '@chakra-ui/react'
+import {  Box, Flex, Link, Button, Spacer, Input, Divider, InputGroup, InputLeftElement, Heading, InputRightElement, Menu } from '@chakra-ui/react'
+import {ChevronDownIcon, Search2Icon, SearchIcon} from '@chakra-ui/icons'
 
 
 const Header = () => {
   return (
-        <HStack w={'full'} bgColor={'gray.300'}>
-            <Text color={'green'}>upwork</Text>
-            <Breadcrumb>
-                <BreadcrumbItem>
-                    <BreadcrumbLink href='#'>Home</BreadcrumbLink>
-                </BreadcrumbItem>
 
-                <BreadcrumbItem>
-                    <BreadcrumbLink href='#'>Docs</BreadcrumbLink>
-                </BreadcrumbItem>
+    <Flex w={'100%'} p={2} bg={'gray.300'}>
+        <Flex p={1} >
+            <Heading>LOGO</Heading>
+            <Link><Button variant={'ghost'}>Home</Button></Link>
+            <Link><Button variant={'ghost'}>Home</Button></Link>
+            <Link><Button variant={'ghost'}>Home</Button></Link>
+            <Link><Button variant={'ghost'}>Home</Button></Link>
+        </Flex>
+        <Spacer/>
+        <Flex pt={2}>
+            <Box borderColor={'black'}  w={'auto'} mr={4}>
+                    <InputGroup>
+                        <InputLeftElement as={Button} children = {<Search2Icon />} variant={'unstyled'} />
+                        <Input placeholder='Search'/>
+                    </InputGroup>
+                    
+               
+                
+            </Box>
+            <Button variant={'ghost'}>Log In</Button>
+            <Button colorScheme='green' variant={'ghost'}>Sign Up</Button>
 
-                <BreadcrumbItem isCurrentPage>
-                    <BreadcrumbLink href='#'>Breadcrumb</BreadcrumbLink>
-                </BreadcrumbItem>
-                </Breadcrumb>
-        </HStack>  
+        </Flex>
+        
+    </Flex>
+    
+
+       
     )
 }
 
