@@ -1,12 +1,12 @@
 import React from 'react'
-import {  Box, Flex, Link, Button, Spacer, Input, Divider, InputGroup, InputLeftElement, Heading, InputRightElement, Menu } from '@chakra-ui/react'
+import {  Box, Flex, Link, Button, Spacer, Input, Divider, InputGroup, InputLeftElement, Heading, InputRightElement, Menu, HStack } from '@chakra-ui/react'
 import {ChevronDownIcon, Search2Icon, SearchIcon} from '@chakra-ui/icons'
 
 
 const Header = () => {
   return (
-
-    <Flex w={'100%'} p={2} bg={'gray.300'}>
+<>
+    <Flex w={'100%'} p={2}>
         <Flex p={1} >
             <Heading>LOGO</Heading>
             <Link><Button variant={'ghost'}>Home</Button></Link>
@@ -31,6 +31,22 @@ const Header = () => {
         </Flex>
         
     </Flex>
+    <Divider/>
+    <Flex w={'100%'} p={2}>
+        
+            <Link><Button variant={'ghost'}>Home</Button></Link>
+            <Link><Button variant={'ghost'}>Home</Button></Link>
+            <Link><Button variant={'ghost'}>Home</Button></Link>
+            <Link><Button variant={'ghost'}>Home</Button></Link>
+        
+        <Spacer/>
+        
+    </Flex>
+    
+     
+    
+</>
+    
     
 
        

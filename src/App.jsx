@@ -8,7 +8,7 @@ function App() {
   return (
     <VStack>
       <Header/>
-      
+      <Content />
     </VStack>
   )
 }
